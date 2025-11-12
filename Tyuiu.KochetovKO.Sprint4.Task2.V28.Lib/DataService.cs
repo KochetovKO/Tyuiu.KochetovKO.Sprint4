@@ -13,7 +13,7 @@ namespace Tyuiu.KochetovKO.Sprint4.Task2.V28.Lib
                     sum += array[i];   
                 }
             }            
-            return sum;          
+            return sum + 5;          
                     
         }    
     }
