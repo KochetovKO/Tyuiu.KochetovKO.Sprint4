@@ -7,14 +7,17 @@ namespace Tyuiu.KochetovKO.Sprint4.Task1.V26.Lib
     {
         public int Calculate(int[] array)
         {
-            int product = 1;
+            int sum = 0;
             bool hasodd = false;
             for (int i = 0; i < array.Length; i++)
             {
-                if (array[i] % 2 != 0) ;
-                hasodd = true;
+                if (array[i] % 2 != 0)
+                {
+                    sum += array[i];
+                    hasodd = true;
+                } 
             }
-            return hasodd ? product : 0;
+            return hasodd ? sum : 0;
         }   
     }   
 }
