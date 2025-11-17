@@ -13,7 +13,7 @@ namespace Tyuiu.KochetovKO.Sprint4.Task5.V12.Lib
             {
                 for (int j = 0; j < colums; j++)
                 {
-                    if (matrix[i, j] > 0)
+                    if (matrix[i, j] < 0)
                     {
                         count++;
                     }
