@@ -5,7 +5,7 @@ namespace Tyuiu.KochetovKO.Sprint4.Task5.V12.Lib
     {
         public int Calculate(int[,] matrix)
         {
-            int rows = matrix.GetUpperBound(0);
+            int rows = matrix.GetUpperBound(0) + 1;
             int colums = matrix.Length / rows;
 
             int count = 0;
@@ -13,7 +13,7 @@ namespace Tyuiu.KochetovKO.Sprint4.Task5.V12.Lib
             {
                 for (int j = 0; j < colums; j++)
                 {
-                    if (matrix[i, j] >= 0)
+                    if (matrix[i, j] > 0)
                     {
                         count++;
                     }
